@@ -2,6 +2,7 @@ package com.example.listview_prabin;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Adapter;
@@ -52,8 +53,11 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int i, long l) {
                 String country = parent.getItemAtPosition(i).toString();
                 String capital = countriesMap.get(country);
-                Toast.makeText(MainActivity.this, "Capital of" + country + "is:" +capital, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "Capital of" + country + "is:" +capital, Toast.LENGTH_SHORT).show();
 
+                Intent intent = new Intent(MainActivity.this,CapitalActivity.class);
+                intent.putExtra("capital",capital);
+                startActivity(intent);
             }
         });
     }
