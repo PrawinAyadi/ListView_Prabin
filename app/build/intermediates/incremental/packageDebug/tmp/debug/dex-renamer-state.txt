@@ -1,0 +1,4 @@
+#Fri Oct 25 11:38:23 NPT 2019
+base.0=F\:\\Android Projects\\ListView_Prabin\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
